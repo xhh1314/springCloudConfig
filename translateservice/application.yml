@@ -18,4 +18,65 @@ translation:
   history:
     saveUrl: "http://gondar/widget/msg/record"
   azure:
-    code-map: "English:英语"
+    speech-translate-config: '{
+    "speech_recognition_url": "https://eastasia.stt.speech.microsoft.com/speech/recognition/conversation/cognitiveservices/v1", 
+    "supported_languages": [
+        {
+            "name": "普通话", 
+            "detail": [
+                "zh-CN", 
+                "Chinese-simplified"
+            ]
+        }, 
+        {
+            "name": "粤语", 
+            "detail": [
+                "zh-HK", 
+                "Chinese-Traditional"
+            ]
+        }, 
+        {
+            "name": "英语", 
+            "detail": [
+                "en-US", 
+                "English"
+            ]
+        }, 
+        {
+            "name": "日语", 
+            "detail": [
+                "ja-JP", 
+                "Japanese"
+            ]
+        }, 
+        {
+            "name": "韩语", 
+            "detail": [
+                "ko-KR", 
+                "Korean"
+            ]
+        }, 
+        {
+            "name": "法语", 
+            "detail": [
+                "fi-FI", 
+                "Finnish"
+            ]
+        }, 
+        {
+            "name": "德语", 
+            "detail": [
+                "de-DE", 
+                "German"
+            ]
+        }, 
+        {
+            "name": "阿拉伯语", 
+            "detail": [
+                "ar-EG", 
+                "Arabic"
+            ]
+        }
+    ], 
+    "subscriptionKey": "f9dabe6f0ed54913ba95ce6e3f06bb53"
+}'
