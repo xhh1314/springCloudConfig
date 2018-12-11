@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: translateservice
+  profiles:
+    active: dev
+
+logging:
+  file: /home/servlets/logs/${spring.application.name}/${spring.application.name}.log
+  pattern:
+    file: "%d{dd-MM-yyyy HH:mm:ss.SSS} [%thread] %-5level %logger{36}.%M - %msg%n"
+  level:
+    root: info
+    com.mobvoi.onebox: debug
+
+translation:
+  stream:
+    url: "ws://streaming/websocket/asr?is_oversea=false"
+  history:
+    saveUrl: "http://gondar/widget/msg/record"
+  azure:
+    code-map: "English:英语"
