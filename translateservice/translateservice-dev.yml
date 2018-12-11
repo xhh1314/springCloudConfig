@@ -1,9 +1,3 @@
-spring:
-  application:
-    name: translateservice
-  profiles:
-    active: dev
-
 logging:
   file: /home/servlets/logs/${spring.application.name}/${spring.application.name}.log
   pattern:
